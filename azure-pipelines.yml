@@ -27,3 +27,9 @@ steps:
   displayName: 'run tests'
 - script: npm build
   displayName: 'run build'
+
+- task: PublishTestResults@2
+  condition: succeededOrFailed()
+  inputs:
+    testRunner: JUnit
+    testResultsFiles: '**/TEST-RESULTS.xml'
