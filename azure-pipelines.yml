@@ -32,7 +32,7 @@ stages:
 
 - stage: deploy
   jobs:
-  - job: 'job 1'
+  - job: 'job_1'
     steps:
     - task: DownloadPipelineArtifact@1
       inputs:
