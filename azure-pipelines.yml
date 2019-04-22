@@ -40,9 +40,9 @@ stages:
         downloadPath: '$(System.DefaultWorkingDirectory)'
     - task: AzureWebApp@1
       inputs:
-        azureSubscription: 'node-app'
+        azureSubscription: 'RMPM'
         appType: 'webAppLinux'
-        appName: 'linuxmvptest19'
+        appName: 'linuxmvptest191'
         runtimeStack: 'NODE|10.1'
         startUpCommand: 'npm run start'
 
@@ -58,6 +58,6 @@ stages:
       inputs:
         azureSubscription: 'RMPM'
         appType: 'webAppLinux'
-        appName: 'linuxparalleltest19'
+        appName: 'linuxmvptest192'
         runtimeStack: 'NODE|10.1'
         startUpCommand: 'npm run start'
